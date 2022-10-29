@@ -71,7 +71,7 @@ nav .index a:hover {
   background-image: url(../images/オードリー8.jpg);
   background-size: cover;
   height: 100vh;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 }
 #main .main-message {
