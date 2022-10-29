@@ -15,7 +15,7 @@ li {
 
 nav {
   width: 100%;
-  height: 110px;
+  height: 80px;
   opacity: 0.9;
   z-index: 10;
   position: fixed;
@@ -24,7 +24,7 @@ nav {
 nav .main-flame h1 {
   font-family: serif;
   text-align: center;
-  margin: 4px 0;
+  margin: 8px 0;
 }
 nav .main-flame h1 a {
   color: #000;
@@ -64,20 +64,20 @@ nav .index a:hover {
 }
 
 .blank {
-  padding: 52px;
+  padding: 37px;
   margin: 0;
 }
 
 .menu-btn {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 4px;
+  right: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
-  width: 60px;
+  height: 56px;
+  width: 56px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -102,11 +102,11 @@ nav .index a:hover {
 }
 
 .menu-btn span:before {
-  bottom: 8px;
+  bottom: 10px;
 }
 
 .menu-btn span:after {
-  top: 8px;
+  top: 10px;
 }
 
 #menu-btn-check:checked ~ .menu-btn span {
@@ -143,7 +143,7 @@ nav .index a:hover {
 }
 
 .menu-content ul {
-  padding: 70px 10px 0;
+  padding: 30px 10px 0;
 }
 
 .menu-content ul li {
