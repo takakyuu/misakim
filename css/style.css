@@ -15,11 +15,16 @@ li {
 
 nav {
   width: 100%;
-  height: 80px;
+  height: 82px;
   opacity: 0.9;
   z-index: 10;
   position: fixed;
   background-color: rgb(250, 190, 167);
+}
+@media (min-width: 800px) {
+  nav {
+    height: 122px;
+  }
 }
 nav .main-flame h1 {
   font-family: serif;
@@ -42,16 +47,21 @@ nav .main-flame h1 .main-icon {
   margin: 0 16px;
 }
 nav .index {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 40px;
   display: none;
+}
+@media (min-width: 800px) {
+  nav .index {
+    display: inline-block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 60px;
+  }
 }
 nav .index li {
   list-style: none;
@@ -66,6 +76,11 @@ nav .index a:hover {
 .blank {
   padding: 37px;
   margin: 0;
+}
+@media (min-width: 800px) {
+  .blank {
+    padding: 57px;
+  }
 }
 
 .menu-btn {
@@ -87,6 +102,11 @@ nav .index a:hover {
       -ms-flex-align: center;
           align-items: center;
   z-index: 90;
+}
+@media (min-width: 800px) {
+  .menu-btn {
+    display: none;
+  }
 }
 
 .menu-btn span,
@@ -134,12 +154,19 @@ nav .index a:hover {
   height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 80;
-  background-color: white;
+  left: 100%; /*leftの値を変更してメニューを画面外へ*/
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; /*アニメーション設定*/
+  margin-left: 140px;
 }
 .menu-content a:hover {
   opacity: 0.5;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  left: 0; /*メニューを画面内へ*/
 }
 
 .menu-content ul {
@@ -174,22 +201,6 @@ nav .index a:hover {
   position: absolute;
   right: 11px;
   top: 16px;
-}
-
-.menu-content {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 100%; /*leftの値を変更してメニューを画面外へ*/
-  z-index: 80;
-  background-color: white;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; /*アニメーション設定*/
-}
-
-#menu-btn-check:checked ~ .menu-content {
-  left: 0; /*メニューを画面内へ*/
 }
 
 .menu-icon {
@@ -229,6 +240,12 @@ nav .index a:hover {
   padding-top: 100px;
   margin-top: -100px;
 }
+@media (min-width: 800px) {
+  #introduction #intro {
+    padding-top: 140px;
+    margin-top: -140px;
+  }
+}
 #introduction .last-message {
   font-weight: bold;
   color: salmon;
@@ -241,6 +258,12 @@ nav .index a:hover {
 #performance #perfor {
   padding-top: 100px;
   margin-top: -100px;
+}
+@media (min-width: 800px) {
+  #performance #perfor {
+    padding-top: 140px;
+    margin-top: -140px;
+  }
 }
 #performance h5 {
   margin-top: 2px;
@@ -265,6 +288,12 @@ nav .index a:hover {
 #charm #char {
   padding-top: 100px;
   margin-top: -100px;
+}
+@media (min-width: 800px) {
+  #charm #char {
+    padding-top: 140px;
+    margin-top: -140px;
+  }
 }
 #charm .link {
   color: salmon;
@@ -292,6 +321,12 @@ nav .index a:hover {
   padding-top: 100px;
   margin-top: -100px;
 }
+@media (min-width: 800px) {
+  #question #ques {
+    padding-top: 140px;
+    margin-top: -140px;
+  }
+}
 #question h3 {
   margin-bottom: 4px;
 }
@@ -302,6 +337,12 @@ nav .index a:hover {
 #sns #sn {
   padding-top: 100px;
   margin-top: -100px;
+}
+@media (min-width: 800px) {
+  #sns #sn {
+    padding-top: 140px;
+    margin-top: -140px;
+  }
 }
 @media (min-width: 600px) {
   #sns .wrapper {
