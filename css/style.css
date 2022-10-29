@@ -1,0 +1,193 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "Yu Gothic Medium";
+}
+
+a {
+  color: indianred;
+  font-weight: bold;
+}
+
+li {
+  margin-left: -20px;
+}
+
+nav {
+  width: 100%;
+  height: 110px;
+  opacity: 0.9;
+  z-index: 10;
+  position: fixed;
+  background-color: rgb(250, 190, 167);
+}
+nav .main-flame h1 {
+  font-family: serif;
+  text-align: center;
+  margin: 4px 0;
+}
+nav .main-flame h1 a {
+  color: #000;
+}
+nav .main-flame h1 .main-logo {
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 28px;
+}
+nav .main-flame h1 .main-icon {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  vertical-align: middle;
+  margin: 0 16px;
+}
+nav .index {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+nav .index li {
+  list-style: none;
+}
+nav .index a {
+  text-decoration: none;
+}
+nav .index a:hover {
+  opacity: 0.5;
+}
+
+.blank {
+  padding: 52px;
+  margin: 0;
+}
+
+#main {
+  background-image: url(../images/オードリー8.jpg);
+  background-size: cover;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#main .main-message {
+  font-family: serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 5px red, 0 0 5px red;
+  padding-top: 400px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#main p {
+  font-family: serif;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px red, 0 0 5px red;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 0;
+  margin-top: 4px;
+}
+
+#introduction {
+  padding: 16px;
+  background-color: rgba(255, 192, 203, 0.137);
+}
+#introduction #intro {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+#introduction .last-message {
+  font-weight: bold;
+  color: salmon;
+}
+
+#performance {
+  padding: 16px;
+  background-color: rgba(0, 128, 0, 0.089);
+}
+#performance #perfor {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+#performance h5 {
+  margin-top: 2px;
+}
+#performance p {
+  font-weight: bold;
+  color: salmon;
+  margin-bottom: 0;
+}
+#performance p + p {
+  margin-top: 0;
+}
+#performance p + p + p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+#charm {
+  padding: 16px;
+  background-color: rgba(255, 192, 203, 0.137);
+}
+#charm #char {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+#charm .link {
+  color: salmon;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 6px;
+}
+#charm .apeal {
+  margin: 16px;
+}
+#charm .apeal .twitter {
+  background-color: skyblue;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px;
+  margin-top: 0;
+}
+
+#question {
+  padding: 16px;
+  background-color: rgba(0, 128, 0, 0.089);
+}
+#question #ques {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+#question h3 {
+  margin-bottom: 4px;
+}
+
+#sns {
+  padding: 16px;
+}
+#sns #sn {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+#sns .subtitle {
+  border-bottom: 1px solid indianred;
+}
+
+footer {
+  background: gray;
+  color: white;
+  height: 48px;
+  padding: 8px 24px;
+}
+footer .takkaron {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
