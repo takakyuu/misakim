@@ -15,11 +15,11 @@ li {
 
 nav {
   width: 100%;
-  height: 82px;
+  height: 64px;
   opacity: 0.9;
   z-index: 10;
   position: fixed;
-  background-color: rgb(250, 190, 167);
+  background-color: rgb(255, 224, 182);
 }
 @media (min-width: 800px) {
   nav {
@@ -39,15 +39,28 @@ nav .main-flame h1 .main-logo {
   vertical-align: middle;
   font-size: 28px;
 }
+@media (min-width: 800px) {
+  nav .main-flame h1 .main-logo {
+    font-size: 40px;
+  }
+}
 nav .main-flame h1 .main-icon {
   border-radius: 50%;
-  height: 64px;
-  width: 64px;
+  height: 48px;
+  width: 48px;
   vertical-align: middle;
-  margin: 0 16px;
+  margin: 0 4px;
+}
+@media (min-width: 800px) {
+  nav .main-flame h1 .main-icon {
+    height: 64px;
+    width: 64px;
+    margin: 0 8px;
+  }
 }
 nav .index {
   display: none;
+  font-size: 20px;
 }
 @media (min-width: 800px) {
   nav .index {
@@ -61,6 +74,7 @@ nav .index {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 60px;
+    padding-bottom: 4px;
   }
 }
 nav .index li {
@@ -74,7 +88,7 @@ nav .index a:hover {
 }
 
 .blank {
-  padding: 37px;
+  padding: 33px;
   margin: 0;
 }
 @media (min-width: 800px) {
@@ -203,13 +217,28 @@ nav .index a:hover {
   top: 16px;
 }
 
-.menu-icon {
-  font-size: 28px;
+.menu-icon a {
+  font-size: 45px;
   color: #000;
 }
 
+@media (min-width: 1200px) {
+  #main {
+    padding: 0 70px;
+  }
+}
 #main img {
   max-width: 600px;
+}
+@media (min-width: 600px) {
+  #main img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #main img {
+    max-width: 600px;
+  }
 }
 #main .main-message {
   font-family: serif;
@@ -220,6 +249,11 @@ nav .index a:hover {
   text-shadow: 0 0 5px red, 0 0 5px red;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+@media (min-width: 800px) {
+  #main .main-message {
+    font-size: 24px;
+  }
 }
 #main p {
   font-family: serif;
@@ -237,13 +271,13 @@ nav .index a:hover {
   background-color: rgba(255, 192, 203, 0.137);
 }
 #introduction #intro {
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 78px;
+  margin-top: -78px;
 }
 @media (min-width: 800px) {
   #introduction #intro {
-    padding-top: 140px;
-    margin-top: -140px;
+    padding-top: 138px;
+    margin-top: -138px;
   }
 }
 #introduction .last-message {
@@ -256,13 +290,13 @@ nav .index a:hover {
   background-color: rgba(0, 128, 0, 0.089);
 }
 #performance #perfor {
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 78px;
+  margin-top: -78px;
 }
 @media (min-width: 800px) {
   #performance #perfor {
-    padding-top: 140px;
-    margin-top: -140px;
+    padding-top: 138px;
+    margin-top: -138px;
   }
 }
 #performance h5 {
@@ -286,13 +320,13 @@ nav .index a:hover {
   background-color: rgba(255, 192, 203, 0.137);
 }
 #charm #char {
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 78px;
+  margin-top: -78px;
 }
 @media (min-width: 800px) {
   #charm #char {
-    padding-top: 140px;
-    margin-top: -140px;
+    padding-top: 138px;
+    margin-top: -138px;
   }
 }
 #charm .link {
@@ -318,13 +352,13 @@ nav .index a:hover {
   background-color: rgba(0, 128, 0, 0.089);
 }
 #question #ques {
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 78px;
+  margin-top: -78px;
 }
 @media (min-width: 800px) {
   #question #ques {
-    padding-top: 140px;
-    margin-top: -140px;
+    padding-top: 138px;
+    margin-top: -138px;
   }
 }
 #question h3 {
@@ -335,13 +369,13 @@ nav .index a:hover {
   padding: 16px;
 }
 #sns #sn {
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 78px;
+  margin-top: -78px;
 }
 @media (min-width: 800px) {
   #sns #sn {
-    padding-top: 140px;
-    margin-top: -140px;
+    padding-top: 138px;
+    margin-top: -138px;
   }
 }
 @media (min-width: 600px) {
@@ -350,6 +384,9 @@ nav .index a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -359,7 +396,13 @@ nav .index a:hover {
 }
 @media (min-width: 600px) {
   #sns .wrapper .sns-box {
-    width: 25%;
+    width: calc(50% - 8px);
+  }
+}
+@media (min-width: 800px) {
+  #sns .wrapper .sns-box {
+    width: calc(25% - 24px);
+    padding: 16px;
   }
 }
 #sns .subtitle {
