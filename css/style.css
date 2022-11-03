@@ -23,7 +23,7 @@ nav {
 }
 @media (min-width: 800px) {
   nav {
-    height: 122px;
+    height: 138px;
   }
 }
 nav .main-flame h1 {
@@ -41,11 +41,11 @@ nav .main-flame h1 a {
 nav .main-flame h1 .main-logo {
   text-decoration: none;
   vertical-align: middle;
-  font-size: 28px;
+  font-size: 26px;
 }
 @media (min-width: 800px) {
   nav .main-flame h1 .main-logo {
-    font-size: 40px;
+    font-size: 34px;
   }
 }
 nav .main-flame h1 .main-icon {
@@ -65,17 +65,22 @@ nav .main-flame h1 .main-icon {
 nav .main-flame h1 small {
   font-size: 12px;
 }
+@media (min-width: 800px) {
+  nav .main-flame h1 small {
+    font-size: 14px;
+  }
+}
 nav .main-flame p {
   padding: 0;
   margin: 0;
-  font-size: 8px;
+  font-size: 10px;
   color: indianred;
   margin-left: 12px;
 }
 @media (min-width: 800px) {
   nav .main-flame p {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 nav .index {
@@ -94,7 +99,8 @@ nav .index {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 60px;
-    padding-bottom: 4px;
+    padding: 4px 0 4px 0;
+    margin: 0;
   }
 }
 nav .index li {
@@ -108,12 +114,12 @@ nav .index a:hover {
 }
 
 .blank {
-  padding: 33px;
+  padding: 38px;
   margin: 0;
 }
 @media (min-width: 800px) {
   .blank {
-    padding: 57px;
+    padding: 65px;
   }
 }
 
