@@ -41,7 +41,7 @@ nav .main-flame h1 a {
 nav .main-flame h1 .main-logo {
   text-decoration: none;
   vertical-align: middle;
-  font-size: 26px;
+  font-size: 20px;
 }
 @media (min-width: 800px) {
   nav .main-flame h1 .main-logo {
